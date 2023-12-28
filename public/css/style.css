@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #3F3D44;
+    font-family: 'Preahvihear', sans-serif;
+    margin-top: 50px;
+}
+
+#form{
+    width: 700px;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+
+}
+
+#form h1{
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    
+}
+
+#form h4{
+    font-size: 30px;
+    color: #5DA9E9;
+}
+
+#form p{
+  color: white;
+  font-size: 15px;
+}
+
+#form i{
+  color: #5DA9E9;
+}
+
+#form input{
+  background-color: #5DA9E9;
+  padding: 15px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  transition: 0.3s ease;
+}
+
+::placeholder{
+  color: white;
+  font-size: 17px;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+#form input:hover{
+  background-color: #2B8BDA;
+}
+
+#form button{
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #5DA9E9;
+  color: white;
+  transition: 0.3s ease;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+#form button:hover{
+  background-color: white;
+  color: #5DA9E9;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#form #down{
+    font-size: 20px;
+    color:  #5DA9E9;
+}
+
+.id-info{
+    color: white;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+
+/* After convert Code */
+
+.errors{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 12px;
+    color: red;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    margin-top: 20px;
+  }
+  
+  .success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  #download-btn{
+    font-family: 'Preahvihear', sans-serif;
+    width: fit-content;
+    padding: 15px;
+    color: white;
+    background-color: #5DA9E9;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+  }
+  
+  #download-btn:hover{
+    color:#5DA9E9;
+    background-color:  white;
+    border: 1px solid  lightgray;
+    transform: scale(1.1);
+  }
+  
+  @media(max-width:768px){
+    .bottom-container{
+      width: 90%;
+      margin: auto;
+    }
+  
+    #form, .success{
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  @media(max-width:480px){
+    #form h1{
+        font-size: 50px;
+    }
+    #form h4{
+        font-size: 20px;
+    }
+
+    #form input{
+      width: 50%;
+    }
+  }
